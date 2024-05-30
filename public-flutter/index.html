@@ -15,13 +15,19 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>Sales Trail</title>
+  <title>sales_canvas</title>
   <link rel="manifest" href="manifest.json">
 
-  <!-- Load Google Maps JavaScript API once with all required libraries -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8NiiWiv0HmxaShculfetr-ce_d40pmjs&libraries=drawing,visualization,places"></script>
-  <script src="https://unpkg.com/@googlemaps/markerclusterer@2.5.3/dist/index.min.js"></script>
+  <!-- Load Google Maps JavaScript API asynchronously with a callback -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8NiiWiv0HmxaShculfetr-ce_d40pmjs&libraries=drawing,visualization,places&callback=initMap"></script>
+  <script async defer src="https://unpkg.com/@googlemaps/markerclusterer@2.5.3/dist/index.min.js"></script>
 
+  <script>
+    // Callback function to initialize the map
+    function initMap() {
+      // Your map initialization code here
+    }
+  </script>
 </head>
 <body>
 <script src="flutter_bootstrap.js" async></script>
